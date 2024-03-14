@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 一定不要忘记引入 bootstrap 的样式文件 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        .row div {
+            height: 300px;
+            background-color: purple;
+        }
+
+        .row div:nth-child(3) {
+            background-color: pink;
+        }
+
+        span {
+            font-size: 50px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <span class="d-none d-lg-block">我会显示哦</span>
+            </div>
+            <div class="col-3">2</div>
+            <div class="col-3 d-none d-sm-block d-md-none">我会变魔术哦</div>
+            <div class="col-3">4</div>
+        </div>
+    </div>
+</body>
+
+</html>
